@@ -1,4 +1,4 @@
-# Project Name: Media Narratives and Nationalism: Analyzing the Huawei 5G Ban
+# Media Narratives and Nationalism: Analyzing the Huawei 5G Ban
 
 ## Brief Description
 This project delves into the interplay between media narratives, nationalism, and the discourse surrounding the UK's Huawei 5G ban, utilizing a mixed-methods approach to examine how British and Chinese media frame this geopolitical issue.
