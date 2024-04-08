@@ -1,4 +1,5 @@
-# Media Narratives and Nationalism: Analyzing the Huawei 5G Ban
+# Huawei (not) in the UK: Keyword and Sentiment Analysis of Media Discourse on the 2020 Huawei 5G Ban in the United Kingdom
+
 
 ## Brief Description
 This project delves into the interplay between media narratives, nationalism, and the discourse surrounding the UK's Huawei 5G ban, utilizing a mixed-methods approach to examine how British and Chinese media frame this geopolitical issue.
