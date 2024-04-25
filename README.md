@@ -1,4 +1,4 @@
-# Huawei (not) in the UK: Keyword and Sentiment Analysis of Media Discourse on the 2020 Huawei 5G Ban in the United Kingdom
+# Huawei (not) in the Grid: Keyword and Sentiment Analysis of Media Discourse on the 2020 Huawei 5G Ban in the United Kingdom
 
 
 ## Brief Description
@@ -12,8 +12,7 @@ This project delves into the interplay between media narratives, nationalism, an
 ## Prerequisites
 - **Software Needed:** Python, RStudio 
 - **Libraries/Packages:** 
-  - Python: pandas, numpy, matplotlib, seaborn, scikit-learn, NLTK, spaCy, TensorFlow or PyTorch, jieba
-  - R: tidyverse, ggplot2, tm (Text Mining), sentimentr
+  - Python: pandas, numpy, matplotlib, seaborn, scikit-learn, NLTK, spaCy, TensorFlow or PyTorch
 - **Special Requirements:** None
 - **Cost:** All software and libraries mentioned are open-source and free.
 
