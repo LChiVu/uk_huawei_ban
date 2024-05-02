@@ -10,19 +10,34 @@ This project delves into the interplay between media narratives, nationalism, an
 - **Contact:** vu_c1@denison.edu
 
 ## Prerequisites
-- **Software Needed:** Python, RStudio 
-- **Libraries/Packages:** 
-  - Python: pandas, numpy, matplotlib, seaborn, scikit-learn, NLTK, spaCy, TensorFlow or PyTorch
-- **Special Requirements:** None
-- **Cost:** All software and libraries mentioned are open-source and free.
+- **Software Needed:** Python 3.8+
+- **Libraries**: nltk, pandas, re, matplotlib, scikit-learn
 
 ## Data
-- **Description:** The dataset includes news articles from major British and Chinese media outlets, covering the period from the announcement of the Huawei 5G ban in July 2020 until February 2024.
-- **Sources:** Articles collected from British popular media (The Guardian, The Daily Mail, The Daily Mirror), and Chinese ones (Global Times, People’s Daily, Sina)
-- **Key Variables:** Article text, publication date, source, sentiment score, frequency of nationalism-related keywords, nationalism score (self-annotated).
-- **Citations/URLs:** Data compiled from public domain sources; URLs provided in dataset documentation.
+The dataset includes news articles from major British and Chinese media outlets from July 2020 until February 2024. The articles are stored in an Excel file (`huawei articles Local.xlsx`), which is processed to clean and analyze the text.
 
+## Analysis Process
+### Text Preprocessing
+The articles undergo several preprocessing steps:
+- URL removal
+- Lowercasing
+- Punctuation and numeric removal
+- Stopword removal using NLTK's English stopwords list
+- Lemmatization using NLTK's WordNet lemmatizer
+- Additional stopword removal: Stopwords specific to the context of Huawei and 5G, which do not contribute meaningful information to the analysis, are also removed.
+- Source Normalization: Media source names are normalized to ensure consistency across the dataset, facilitating group analysis.
 
-## Other Useful Information
-- **jieba Package for Python:** jieba is an essential text segmentation library for processing Chinese text. It supports three types of segmentation modes: accurate, full, and search. jieba is crucial for analyzing Chinese media content in this project, allowing for the effective breakdown and analysis of text for keyword and sentiment analysis.
-- This project is aimed at contributing to academic discussions on media studies, nationalism, and international relations, with a focus on educational purposes.
+### TF-IDF Analysis
+TF-IDF (Term Frequency-Inverse Document Frequency) analysis is conducted to identify the most relevant words and phrases in the articles related to each source. This helps in understanding the focus of each media source regarding the Huawei 5G ban.
+
+### Sentiment Analysis
+Using the TextBlob library, the sentiment of each article is analyzed to determine the general tone (positive, negative, neutral) and subjectivity expressed in the discourse.
+
+## Results
+Results of the analysis, including charts and plots generated using matplotlib, provide insights into how different media landscapes perceive and communicate issues related to the Huawei 5G ban. These findings can be used to gauge the impact of media framing on public perception and policy-making.
+
+## Contribution and Lincenses
+- Contributions to this project are welcome. Please fork the repository, make your changes, and submit a pull request.
+- The project is licensed under the MIT License - see the LICENSE file for details.
+
+*This project is aimed at contributing to academic discussions on media studies, nationalism, and international relations, with a focus on educational purposes.*
